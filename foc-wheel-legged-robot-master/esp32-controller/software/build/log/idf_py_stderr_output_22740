@@ -1,0 +1,36 @@
+fatal: detected dubious ownership in repository at 'D:/esp_idf/frameworks/esp-idf-v5.3.1'
+'D:/esp_idf/frameworks/esp-idf-v5.3.1' is owned by:
+	'S-1-5-32-544'
+but the current user is:
+	'S-1-5-21-4160385171-2991612493-2222760611-1001'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory D:/esp_idf/frameworks/esp-idf-v5.3.1
+Traceback (most recent call last):
+  File "D:\esp_idf\frameworks\esp-idf-v5.3.1\tools\kconfig_new\prepare_kconfig_files.py", line 102, in <module>
+    main()
+  File "D:\esp_idf\frameworks\esp-idf-v5.3.1\tools\kconfig_new\prepare_kconfig_files.py", line 94, in main
+    env.update(json.load(args.env_file))
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "json\__init__.py", line 293, in load
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xae in position 7599: illegal multibyte sequence
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "d:\esp_idf\python_env\idf5.3_py3.11_env\Lib\site-packages\kconfgen\__main__.py", line 18, in <module>
+    main()
+  File "d:\esp_idf\python_env\idf5.3_py3.11_env\Lib\site-packages\kconfgen\core.py", line 710, in main
+    env = json.load(args.env_file)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "json\__init__.py", line 293, in load
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xae in position 7599: illegal multibyte sequence
+CMake Error at D:/esp_idf/frameworks/esp-idf-v5.3.1/tools/cmake/kconfig.cmake:209 (message):
+  Failed to run kconfgen
+  (d:/esp_idf/python_env/idf5.3_py3.11_env/Scripts/python.exe;-m;kconfgen;--list-separator=semicolon;--kconfig;D:/esp_idf/frameworks/esp-idf-v5.3.1/Kconfig;--sdkconfig-rename;D:/esp_idf/frameworks/esp-idf-v5.3.1/sdkconfig.rename;--config;D:/毕设/foc-wheel-legged-robot-master/esp32-controller/software/sdkconfig;--env-file;D:/毕设/foc-wheel-legged-robot-master/esp32-controller/software/build/config.env).
+  Error 1
+Call Stack (most recent call first):
+  D:/esp_idf/frameworks/esp-idf-v5.3.1/tools/cmake/build.cmake:623 (__kconfig_generate_config)
+  D:/esp_idf/frameworks/esp-idf-v5.3.1/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:3 (project)
+
+

@@ -1,0 +1,30 @@
+-- Found Git: D:/esp_idf/tools/idf-git/2.39.2/cmd/git.exe (found version "2.39.2.windows.1") 
+-- git rev-parse returned 'fatal: detected dubious ownership in repository at 'D:/esp_idf/frameworks/esp-idf-v5.3.1'
+'D:/esp_idf/frameworks/esp-idf-v5.3.1' is owned by:
+	'S-1-5-32-544'
+but the current user is:
+	'S-1-5-21-4160385171-2991612493-2222760611-1001'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory D:/esp_idf/frameworks/esp-idf-v5.3.1'
+-- ccache will be used for faster recompilation
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: D:/esp_idf/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: D:/esp_idf/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: D:/esp_idf/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file D:/毕设/foc-wheel-legged-robot-master/esp32-controller/software/sdkconfig
+-- Configuring incomplete, errors occurred!
+See also "D:/毕设/foc-wheel-legged-robot-master/esp32-controller/software/build/CMakeFiles/CMakeOutput.log".
